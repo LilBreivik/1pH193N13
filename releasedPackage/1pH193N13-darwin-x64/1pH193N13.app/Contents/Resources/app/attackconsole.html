@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <base href="./"> 
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+  <meta name="description" content="">
+  <meta name="author" content="">
+ 
+  <meta charset="utf-8">
+    <title>BLOCKS - Bootstrap Dashboard Theme</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tool to demonstrate the copression Oracle Attack">
+    <meta name="author" content="Lil Breivik">
+
+    
+ 
+    </style>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+  	<!-- Google Fonts call. Font Used Open Sans & Raleway -->
+	<link href="http://fonts.googleapis.com/css?family=Raleway:400,300" rel="stylesheet" type="text/css">
+  	<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+ 
+
+
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.020/css/hack.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="themes/neon-glow/css/bootstrap4-neon-glow.css">
+   
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.020/css/hack.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+ 
+    
+    <!-- external js -->
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+
+    <style type="text/css">
+      textarea {
+       background-color: #000000; 
+       line-height: 25px;
+       padding: 2px 10px; 
+       font-family: "Helvetica Neue", Helvetica, sans-serif;
+       font-size: inherit;
+       width:100%;
+       height: 100%;
+        box-sizing: border-box;         /* For IE and modern versions of Chrome */
+        -moz-box-sizing: border-box;    /* For Firefox                          */
+        -webkit-box-sizing: border-box; /* For Safari   */
+      }
+      
+      </style>
+
+</head>
+
+
+
+<body ng-app="ConsoleManagementApp">
+
+    <div class="jumbotron bg-transparent mb-0 radius-0">
+        <div class="container" ng-controller="ConsoleManagementController">
+          <div class="ht-tm-header">
+
+          </div>
+
+
+          <div class="container-fluid" ng-show="enableAnalysis">
+              <div class="row">
+                 <div class="col-sm-9" >
+                     <textarea class="lead mb-3 text-mono text-success" id="attackConsole" rows="30" >
+                        
+                     </textarea>
+                 </div>
+                 <div class="col-sm-3">
+                   <p> Flag-Recalculation in progress....</p>
+                   <br>
+                   <p id="attemptAmmount">   </p>
+                   
+                   <br>
+                   <p id="targetFlag">   </p>
+
+                 </div>
+             </div>
+           </div>
+
+            <div class="" ng-hide="enableAnalysis">
+                <div class="row">
+ 
+                   
+                    <div class="col-sm-12">
+
+       
+                      <h1 class="display-2">1pH193N1<span class="vim-caret">3</span></h1>
+                      <div class="lead mb-3 text-mono text-info">A Tool to demonstrate the compression Oracle attack</div>
+                    
+                      <div class="container" ng-show="enableGreetings">    
+                          <img src="images/PepeLogo.png" class="img-rounded" alt="Cinque Terre" width="304" height="236"> 
+                      </div>
+
+                      <div class="text-mono" ng-show="activatePresentationPanelCTF">
+      
+                          <div style="width:100%; height:100%">
+                              <!-- when the form is submitted, the server response will appear in this iframe  -->
+                              <webview style="min-width:900px; min-height:800px" src="./demoCTF.html">
+              
+                              </webview>
+                          </div>
+      
+                      </div>
+
+                      <div class="text-mono" ng-show="activatePresentationPanel1pH193N13">
+      
+                          <div style="width:100%; height:100%">
+                              <!-- when the form is submitted, the server response will appear in this iframe  -->
+                              <webview style="min-width:900px; min-height:800px" src="./demo1pH193N13.html">
+              
+                              </webview>
+                          </div>
+      
+                      </div>
+
+ 
+                      <div class="text-mono"  id="">
+           
+                            <button ng-click="enable1pH193Ni3Presentation()" type="submit" ng-show="activatePresentationPanelCTF"   data-toggle="ht-special-modal" data-target="#theme-download-modal" class="btn btn-warning btn-shadow px-3 my-2 ml-0 text-left">
+                                <span class="fa fa-download mr-xl-2"></span>
+                                   Show 1ph193N13
+                            </button>            
+                            <button ng-click="enableAnalysisPresentation()" ng-show="enableAnalysisButton" type="submit"   data-toggle="ht-special-modal" data-target="#theme-download-modal" class="btn btn-warning btn-shadow px-3 my-2 ml-0 text-left">
+                                <span class="fa fa-download mr-xl-2"></span>
+                                   Start Analysis
+                            </button>  
+                    
+                      </div>
+
+
+                      <div class="text-mono" ng-show="activateSettingsPanel">
+      
+                          <div id="attackParameterConsole">
+                            <div class="text-mono">
+                                <div class="card card-login mx-auto mt-5"> 
+                                        <div class="card-body">
+                                          <form id="loginform" >
+                                            <div class="form-group">
+                                               <label for="flagLabel"> Enter a Flag </label>
+                                               <input class="form-control" id="flag" name="flag" placeholder="Please Enter a Flag" ng-model="flag">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="password">Password</label>
+                                                <input class="form-control" id="password" name="password" placeholder="Please Enter a Password" ng-model="password" >
+                                            </div>
+                                                          
+                                            <div class="form-group">
+                                              <label for="key">Key</label> 
+                                              <input class="form-control" id="key" name="key" placeholder="Please Enter a Key" ng-model="key">
+                                            </div>      
+
+                                            <button ng-show="enableSettingsButton" ng-click="submitSettingsData()" type="submit" data-toggle="ht-special-modal" data-target="#theme-download-modal" class="btn btn-info btn-shadow px-3 my-2 ml-0 text-left">
+                                                <span class="fa fa-download mr-xl-2"></span>
+                                                   Send Settings-Data
+                                            </button>                       
+                                          </form>
+                                        </div>
+                                    </div>         
+                          </div>
+      
+                      </div>
+
+                      </div>
+                      
+
+ 
+                    
+                      <div class="text-mono" ng-hide="activateSettingsPanel">
+      
+                        <button   ng-="activateSettingsPanel" ng-click="enableSettings()" data-toggle="ht-special-modal" data-target="#theme-download-modal" class="btn btn-success btn-shadow px-3 my-2 ml-0 text-left">
+                          <span class="fa fa-download mr-xl-2"></span>
+          
+                          {{enableButton}}
+                        </button>
+                      </div>
+          
+                      <div class="text-darkgrey text-mono my-2"> Source on
+                        <a href="https://github.com/LilBreivik/1pH193N13"  class="ht-neonglow-github-link">GitHub</a></div>
+          
+                      <p class="mt-5 text-grey text-spacey">
+                        Build with  <a href= "https://hackerthemes.com/bootstrap-themes/neon-glow"> Neon Glow </a><br>
+                        Special Thanks to <a href="https://losfuzzys.github.io"> LosFuzzys  </a>  
+                      
+                      </p>
+                     
+                    </div>
+      
+                     
+                  </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    <script type="text/javascript" src="js/1pH193N13Crack.js"></script>
+    <script type="text/javascript" src="js/attackConsoleManagement.js"></script>
+    <script type="text/javascript" src="js/pythonBridge.js"></script>
+</body>
+
+</html>
+
+

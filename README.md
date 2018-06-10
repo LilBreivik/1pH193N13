@@ -19,6 +19,8 @@ but  "autoprefixer","font-awesome" ,"lazypipe"
 
 2.) After running compileSCSS, do copy-theme
 
+3.) run pythondependencies through pip (i recommend a virtualEnvironment )
+
 # COPYRIGHT ISSUES 
 
 I used some css files from https://losfuzzys.github.io/writeup/2015/10/06/tumctfteaser2015-turbo/
@@ -29,3 +31,9 @@ If you see some problem please contact me on lilbreivik@gmail.com
 The solved CTF-Challenge is nc 1.ctf.link 1033. 
 
 The Task is inspired by f0rki. 
+
+# RUN INSTRUCTION
+
+I have added an executable Version in releasedPackage.
+AFTER YOU HAVE INSTALLED electron (locally or gloablly) 
+you can run the application under releasedPackage/1pH193N13-darwin-x64/1pH193N13.app/Contents/MacOS/
