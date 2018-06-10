@@ -1,0 +1,22 @@
+{
+  "name": "1pH193N13",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "installTheme": "git clone https://github.com/HackerThemes/theme-machine.git ",
+    "copyintrolib": "cp -rp node_modules/intro.js .",
+    "copy-theme": "cp -rp theme-machine/themes .",
+    "copyShopAssets": "cp -rp node_modules/startbootstrap-shop-homepage/vendor .",
+    "compileSCSS": "./node_modules/node-sass/bin/node-sass theme-machine/themes/neon-glow/css/bootstrap4-neon-glow.scss theme-machine/themes/neon-glow/css/bootstrap4-neon-glow.css",
+    "start": "electron .",
+    "postinstall": "npm run copyintrolib && npm run installTheme && npm run copyShopAssets",
+    "rollout": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=icons/pepe/pepe.icns --prune=true --out=releasedPackage"
+  },
+  "devDependencies": {
+    "compile-sass": "0.0.5",
+    "electron": "^1.7.6",
+    "electron-packager": "^12.1.0",
+    "intro.js": "^2.9.3",
+    "startbootstrap-shop-homepage": "^4.0.0"
+  }
+}

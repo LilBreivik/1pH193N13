@@ -1,0 +1,18 @@
+# ignore config files 
+.DS_Store
+.vscode
+
+# ignore pycache 
+__pycache__
+
+
+# ignore compiled Files 
+bin/
+node_modules/
+theme-machine/
+
+
+# ignore assets 
+assets/
+intro.js/
+BacklogFILES/
